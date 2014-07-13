@@ -34,6 +34,7 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt complete_aliases # don't expand aliases _before_ completion has finished like: git comm-[tab]
+setopt auto_cd
 
 # Use VI mode in the shell
 #set -o vi
