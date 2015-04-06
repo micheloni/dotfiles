@@ -62,11 +62,12 @@ export MAVEN_OPTS="-XX:MaxPermSize=512m -Xmx2048m -noverify"
 #Rackspace
 export RAX_CREDS_FILE=~/.pyrax.cfg
 
-# Correct operation of Ruby via https
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
-
 # Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # Boot2Docker
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+
+# load nvm - to use different versions of node
+source $(brew --prefix nvm)/nvm.sh
+
